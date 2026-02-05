@@ -14,41 +14,23 @@
     body {font-family: 'Roboto', sans-serif; background:#0a0a0a; color:white; scroll-behavior: smooth;}
     a {text-decoration:none; color:inherit;}
     img {max-width:100%; display:block;}
-
-    /* ===== SCROLL REVEAL ANIMATION ===== */
     .reveal {opacity:0; transform:translateY(20px); transition: all 0.8s ease;}
-    .reveal.active {opacity:1; transform:translateY(0);}
 
     /* ===== HERO SECTION ===== */
     header {
-      height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      position:relative;
-      overflow:hidden;
+      height:100vh; display:flex; justify-content:center; align-items:center; text-align:center; position:relative; overflow:hidden;
     }
     header::before {
-      content:"";
-      position:absolute;
-      top:0; left:0; width:100%; height:100%;
-      background: url('https://via.placeholder.com/800x800') no-repeat center/cover;
-      opacity:0.05;
+      content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+      background: url('https://via.placeholder.com/800x800') no-repeat center/cover; opacity:0.05;
     }
-    .particles {
-      position:absolute; width:100%; height:100%; z-index:1;
-      pointer-events:none;
-    }
-    .hero-content {
-      position:relative; z-index:2;
-    }
+    .particles {position:absolute; width:100%; height:100%; z-index:1; pointer-events:none;}
+    .hero-content {position:relative; z-index:2;}
     .hero-content h1 {font-family:'Poppins', sans-serif; font-size:3rem; color:#1e90ff;}
     .hero-content h2 {margin:20px 0; font-size:1.5rem; font-weight:500; color:white;}
     .hero-buttons {margin-top:30px;}
     .hero-buttons a {
-      display:inline-block; padding:12px 30px; margin:0 10px;
-      background:#1e90ff; color:#fff; border-radius:8px; font-weight:600;
+      display:inline-block; padding:12px 30px; margin:0 10px; background:#1e90ff; color:#fff; border-radius:8px; font-weight:600;
       transition: all 0.3s ease;
     }
     .hero-buttons a:hover {transform:scale(1.1); box-shadow:0 0 15px #1e90ff;}
@@ -63,33 +45,22 @@
     #about .about-text {max-width:600px; font-size:1.1rem; line-height:1.8; color:#ccc;}
 
     /* ===== SKILLS ===== */
-    #skills .skill {
-      margin-bottom:20px;
-    }
+    #skills .skill {margin-bottom:20px;}
     #skills .skill h3 {margin-bottom:5px; color:#1e90ff;}
-    #skills .skill-bar {
-      background:#222; border-radius:10px; overflow:hidden; height:20px;
-    }
-    #skills .skill-bar span {
-      display:block; height:100%; width:0; background:#1e90ff; border-radius:10px;
-      transition: width 1.5s ease-in-out;
-    }
+    #skills .skill-bar {background:#222; border-radius:10px; overflow:hidden; height:20px;}
+    #skills .skill-bar span {display:block; height:100%; width:0; background:#1e90ff; border-radius:10px; transition: width 1.5s ease-in-out;}
 
     /* ===== PROJECTS ===== */
     #projects .projects-grid {display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap:30px;}
     #projects .project-card {
-      background:#111; border-radius:12px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.3);
-      transition: all 0.4s ease;
+      background:#111; border-radius:12px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.3); transition: all 0.4s ease;
     }
     #projects .project-card:hover {transform:translateY(-10px) scale(1.03);}
     #projects .project-card img {width:100%; height:200px; object-fit:cover;}
     #projects .project-card .project-info {padding:20px;}
     #projects .project-card .project-info h3 {color:#1e90ff; margin-bottom:10px;}
     #projects .project-card .project-info p {color:#ccc; font-size:0.95rem; margin-bottom:10px;}
-    #projects .project-card .project-info a {
-      display:inline-block; margin-right:10px; color:#1e90ff; font-weight:600;
-      transition: all 0.3s ease;
-    }
+    #projects .project-card .project-info a {display:inline-block; margin-right:10px; color:#1e90ff; font-weight:600; transition: all 0.3s ease;}
     #projects .project-card .project-info a:hover {transform:scale(1.1);}
 
     /* ===== SERVICES ===== */
@@ -102,13 +73,8 @@
 
     /* ===== CONTACT ===== */
     #contact form {max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:15px;}
-    #contact input, #contact textarea {
-      padding:12px 15px; border:none; border-radius:8px; background:#222; color:white;
-    }
-    #contact button {
-      padding:12px 20px; border:none; border-radius:8px;
-      background:#1e90ff; color:white; font-weight:600; cursor:pointer; transition: all 0.3s ease;
-    }
+    #contact input, #contact textarea {padding:12px 15px; border:none; border-radius:8px; background:#222; color:white;}
+    #contact button {padding:12px 20px; border:none; border-radius:8px; background:#1e90ff; color:white; font-weight:600; cursor:pointer; transition: all 0.3s ease;}
     #contact button:hover {transform:scale(1.05); box-shadow:0 0 15px #1e90ff;}
 
     /* ===== SOCIALS ===== */
@@ -142,6 +108,12 @@
     </div>
   </header>
 
+  <!-- ===== ADSTERAA TOP AD ===== -->
+  <section id="ads-top" class="reveal" style="text-align:center; margin:40px 0;">
+    <script async="async" data-cfasync="false" src="https://pl28653544.effectivegatecpm.com/0dbd6d6cf64e4e4eb0d147223add0f14/invoke.js"></script>
+    <div id="container-0dbd6d6cf64e4e4eb0d147223add0f14"></div>
+  </section>
+
   <!-- ABOUT SECTION -->
   <section id="about" class="reveal">
     <img src="https://via.placeholder.com/250" alt="Profile Photo">
@@ -153,26 +125,11 @@
   <!-- SKILLS SECTION -->
   <section id="skills" class="reveal">
     <h2>My Skills</h2>
-    <div class="skill">
-      <h3>HTML</h3>
-      <div class="skill-bar"><span data-width="95%"></span></div>
-    </div>
-    <div class="skill">
-      <h3>CSS</h3>
-      <div class="skill-bar"><span data-width="90%"></span></div>
-    </div>
-    <div class="skill">
-      <h3>JavaScript</h3>
-      <div class="skill-bar"><span data-width="85%"></span></div>
-    </div>
-    <div class="skill">
-      <h3>React</h3>
-      <div class="skill-bar"><span data-width="80%"></span></div>
-    </div>
-    <div class="skill">
-      <h3>Firebase</h3>
-      <div class="skill-bar"><span data-width="75%"></span></div>
-    </div>
+    <div class="skill"><h3>HTML</h3><div class="skill-bar"><span data-width="95%"></span></div></div>
+    <div class="skill"><h3>CSS</h3><div class="skill-bar"><span data-width="90%"></span></div></div>
+    <div class="skill"><h3>JavaScript</h3><div class="skill-bar"><span data-width="85%"></span></div></div>
+    <div class="skill"><h3>React</h3><div class="skill-bar"><span data-width="80%"></span></div></div>
+    <div class="skill"><h3>Firebase</h3><div class="skill-bar"><span data-width="75%"></span></div></div>
   </section>
 
   <!-- PROJECTS SECTION -->
@@ -181,58 +138,33 @@
     <div class="projects-grid">
       <div class="project-card">
         <img src="https://via.placeholder.com/300x200" alt="Project 1">
-        <div class="project-info">
-          <h3>Chat App</h3>
-          <p>A real-time chat application built with React and Firebase.</p>
-          <a href="#">Live</a>
-          <a href="#">GitHub</a>
-        </div>
+        <div class="project-info"><h3>Chat App</h3><p>A real-time chat application built with React and Firebase.</p><a href="#">Live</a><a href="#">GitHub</a></div>
       </div>
       <div class="project-card">
         <img src="https://via.placeholder.com/300x200" alt="Project 2">
-        <div class="project-info">
-          <h3>Quiz Website</h3>
-          <p>Interactive online quiz platform built with HTML, CSS, JS, and Firebase.</p>
-          <a href="#">Live</a>
-          <a href="#">GitHub</a>
-        </div>
+        <div class="project-info"><h3>Quiz Website</h3><p>Interactive online quiz platform built with HTML, CSS, JS, and Firebase.</p><a href="#">Live</a><a href="#">GitHub</a></div>
       </div>
       <div class="project-card">
         <img src="https://via.placeholder.com/300x200" alt="Project 3">
-        <div class="project-info">
-          <h3>Banking UI</h3>
-          <p>Modern UI design for a personal banking interface.</p>
-          <a href="#">Live</a>
-          <a href="#">GitHub</a>
-        </div>
+        <div class="project-info"><h3>Banking UI</h3><p>Modern UI design for a personal banking interface.</p><a href="#">Live</a><a href="#">GitHub</a></div>
       </div>
     </div>
+  </section>
+
+  <!-- ===== ADSTERAA MIDDLE AD ===== -->
+  <section id="ads-middle" class="reveal" style="text-align:center; margin:40px 0;">
+    <script async="async" data-cfasync="false" src="https://pl28653544.effectivegatecpm.com/0dbd6d6cf64e4e4eb0d147223add0f14/invoke.js"></script>
+    <div id="container-0dbd6d6cf64e4e4eb0d147223add0f14"></div>
   </section>
 
   <!-- SERVICES SECTION -->
   <section id="services" class="reveal">
     <h2>Services</h2>
     <div class="services-grid">
-      <div class="service-card">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Web Development</h3>
-        <p>Creating responsive and functional web applications for any project.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-pencil-ruler"></i>
-        <h3>UI/UX Design</h3>
-        <p>Designing clean and interactive interfaces for optimal user experience.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-bug"></i>
-        <h3>Bug Fixing</h3>
-        <p>Debugging and fixing issues efficiently to improve performance.</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-network-wired"></i>
-        <h3>API Integration</h3>
-        <p>Seamlessly connecting APIs to enhance application functionality.</p>
-      </div>
+      <div class="service-card"><i class="fas fa-laptop-code"></i><h3>Web Development</h3><p>Creating responsive and functional web applications for any project.</p></div>
+      <div class="service-card"><i class="fas fa-pencil-ruler"></i><h3>UI/UX Design</h3><p>Designing clean and interactive interfaces for optimal user experience.</p></div>
+      <div class="service-card"><i class="fas fa-bug"></i><h3>Bug Fixing</h3><p>Debugging and fixing issues efficiently to improve performance.</p></div>
+      <div class="service-card"><i class="fas fa-network-wired"></i><h3>API Integration</h3><p>Seamlessly connecting APIs to enhance application functionality.</p></div>
     </div>
   </section>
 
@@ -252,6 +184,12 @@
     </div>
   </section>
 
+  <!-- ===== ADSTERAA FOOTER AD ===== -->
+  <section id="ads-footer" class="reveal" style="text-align:center; margin:40px 0;">
+    <script async="async" data-cfasync="false" src="https://pl28653544.effectivegatecpm.com/0dbd6d6cf64e4e4eb0d147223add0f14/invoke.js"></script>
+    <div id="container-0dbd6d6cf64e4e4eb0d147223add0f14"></div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     AKINPELU SAMUEL AKINPELU © 2026
@@ -259,48 +197,34 @@
 
   <!-- ===== SCRIPTS ===== -->
   <script>
-    // ===== SCROLL REVEAL =====
     const reveals = document.querySelectorAll('.reveal');
     window.addEventListener('scroll', () => {
       reveals.forEach(el => {
         const top = el.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
-        if(top < windowHeight - 100){
-          el.classList.add('active');
-        }
+        if(top < windowHeight - 100){ el.classList.add('active'); }
       });
     });
 
-    // ===== SKILL BAR ANIMATION =====
     const skillSpans = document.querySelectorAll('.skill-bar span');
     const skillSection = document.getElementById('skills');
     let skillsDone = false;
-
     window.addEventListener('scroll', () => {
       const top = skillSection.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
       if(top < windowHeight - 100 && !skillsDone){
-        skillSpans.forEach(span => {
-          span.style.width = span.getAttribute('data-width');
-        });
+        skillSpans.forEach(span => { span.style.width = span.getAttribute('data-width'); });
         skillsDone = true;
       }
     });
 
-    // ===== PARTICLES FOR HERO =====
     const canvas = document.querySelector('.particles');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const particles = [];
     for(let i=0;i<100;i++){
-      particles.push({
-        x: Math.random()*canvas.width,
-        y: Math.random()*canvas.height,
-        radius: Math.random()*2+1,
-        dx: (Math.random()-0.5)*0.5,
-        dy: (Math.random()-0.5)*0.5
-      });
+      particles.push({x: Math.random()*canvas.width, y: Math.random()*canvas.height, radius: Math.random()*2+1, dx: (Math.random()-0.5)*0.5, dy: (Math.random()-0.5)*0.5});
     }
     function animate(){
       ctx.clearRect(0,0,canvas.width,canvas.height);
@@ -309,19 +233,12 @@
         p.y += p.dy;
         if(p.x<0 || p.x>canvas.width) p.dx*=-1;
         if(p.y<0 || p.y>canvas.height) p.dy*=-1;
-        ctx.beginPath();
-        ctx.arc(p.x,p.y,p.radius,0,Math.PI*2);
-        ctx.fillStyle='#1e90ff';
-        ctx.fill();
+        ctx.beginPath(); ctx.arc(p.x,p.y,p.radius,0,Math.PI*2); ctx.fillStyle='#1e90ff'; ctx.fill();
       });
       requestAnimationFrame(animate);
     }
     animate();
-
-    window.addEventListener('resize', ()=>{
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    });
+    window.addEventListener('resize', ()=>{ canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
   </script>
 </body>
-          </html>
+</html>
