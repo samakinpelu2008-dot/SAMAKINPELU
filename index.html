@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Bottom Ad</title>
+  <title>Bottom Fixed Ad</title>
   <style>
-    body {background:#0a0a0a; color:white; font-family:sans-serif; text-align:center; padding:50px;}
-    h1 {color:#1e90ff;}
-    .ad-banner {margin-top:50px;}
+    body {
+      background:#0a0a0a;
+      color:white;
+      font-family:sans-serif;
+      text-align:center;
+      margin:0;
+      padding-bottom:80px; /* space for fixed ad */
+    }
+    h1 {color:#1e90ff; margin-top:50px;}
+    .ad-banner {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 468px;
+      height: 60px;
+      z-index: 9999;
+      background: #000; /* fallback */
+    }
   </style>
 </head>
 <body>
 
 <h1>Test Page</h1>
-<p>Scroll down to see the ad at the bottom.</p>
+<p>Scroll and see the ad fixed at the bottom of the screen.</p>
+<p>Add more content here to test scrolling...</p>
+<p>More content...</p>
+<p>More content...</p>
 
-<!-- Footer Ad -->
+<!-- Fixed Bottom Ad -->
 <div class="ad-banner">
   <script>
     atOptions = {
