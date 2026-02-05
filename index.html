@@ -3,57 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Single Ad</title>
+  <title>Test Bottom Ad</title>
   <style>
-    body {background:#0a0a0a; color:white; font-family:sans-serif; text-align:center; padding:50px 20px;}
+    body {background:#0a0a0a; color:white; font-family:sans-serif; text-align:center; padding:50px;}
     h1 {color:#1e90ff;}
-    .ad-banner {width:100%; text-align:center; margin:50px 0;}
-    .ad-banner iframe {border:none;}
+    .ad-banner {margin-top:50px;}
   </style>
 </head>
 <body>
 
-<h1>Test Page with Bottom Ad</h1>
+<h1>Test Page</h1>
 <p>Scroll down to see the ad at the bottom.</p>
 
 <!-- Footer Ad -->
-<div id="footer-ad" class="ad-banner"></div>
+<div class="ad-banner">
+  <script>
+    atOptions = {
+      'key' : 'f85a5e2d9a0a54098121a4d47a2212d9',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highperformanceformat.com/f85a5e2d9a0a54098121a4d47a2212d9/invoke.js"></script>
+</div>
 
-<script>
-  // Detect if page is live
-  function isLive() {
-    return location.protocol === 'http:' || location.protocol === 'https:';
-  }
-
-  function loadFooterAd() {
-    const container = document.getElementById('footer-ad');
-
-    if(isLive()) {
-      // Real HighPerformanceFormat ad
-      container.innerHTML = `
-        <script>
-          atOptions = {
-            'key' : 'f85a5e2d9a0a54098121a4d47a2212d9',
-            'format' : 'iframe',
-            'height' : 60,
-            'width' : 468,
-            'params' : {}
-          };
-        <\/script>
-        <script src="https://www.highperformanceformat.com/f85a5e2d9a0a54098121a4d47a2212d9/invoke.js"><\/script>
-      `;
-    } else {
-      // Placeholder for local testing
-      container.innerHTML = `<iframe src="https://via.placeholder.com/468x60?text=Bottom+Ad" width="468" height="60"></iframe>`;
-    }
-  }
-
-  // Initial load
-  loadFooterAd();
-
-  // Auto-refresh every 60 seconds
-  setInterval(loadFooterAd, 60000);
-
-</script>
 </body>
 </html>
