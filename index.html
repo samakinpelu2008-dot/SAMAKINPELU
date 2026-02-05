@@ -3,43 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Ad Page</title>
+  <title>Test Single Ad</title>
   <style>
-    body {background:#0a0a0a; color:white; font-family:sans-serif; text-align:center; padding:20px;}
+    body {background:#0a0a0a; color:white; font-family:sans-serif; text-align:center; padding:50px 20px;}
     h1 {color:#1e90ff;}
-    .ad-banner {width:100%; text-align:center; margin:20px 0;}
+    .ad-banner {width:100%; text-align:center; margin:50px 0;}
     .ad-banner iframe {border:none;}
   </style>
 </head>
 <body>
 
-<h1>Test Ad Page</h1>
-<p>Stay on this page for a few minutes to see auto-refresh in action.</p>
+<h1>Test Page with Bottom Ad</h1>
+<p>Scroll down to see the ad at the bottom.</p>
 
-<!-- TOP AD -->
-<div id="top-ad" class="ad-banner"></div>
-
-<p>Content between ads...</p>
-
-<!-- MIDDLE AD -->
-<div id="middle-ad" class="ad-banner"></div>
-
-<p>More content...</p>
-
-<!-- FOOTER AD -->
+<!-- Footer Ad -->
 <div id="footer-ad" class="ad-banner"></div>
 
 <script>
-  // Function to detect if page is running on a live server (HTTP/HTTPS)
+  // Detect if page is live
   function isLive() {
     return location.protocol === 'http:' || location.protocol === 'https:';
   }
 
-  function loadAd(containerId) {
-    const container = document.getElementById(containerId);
+  function loadFooterAd() {
+    const container = document.getElementById('footer-ad');
 
     if(isLive()) {
-      // Load real ad script for live server
+      // Real HighPerformanceFormat ad
       container.innerHTML = `
         <script>
           atOptions = {
@@ -53,20 +43,16 @@
         <script src="https://www.highperformanceformat.com/f85a5e2d9a0a54098121a4d47a2212d9/invoke.js"><\/script>
       `;
     } else {
-      // Show placeholder for local testing
-      container.innerHTML = `<iframe src="https://via.placeholder.com/468x60?text=Placeholder+Ad" width="468" height="60"></iframe>`;
+      // Placeholder for local testing
+      container.innerHTML = `<iframe src="https://via.placeholder.com/468x60?text=Bottom+Ad" width="468" height="60"></iframe>`;
     }
   }
 
-  // Load all banners initially
-  loadAd('top-ad');
-  loadAd('middle-ad');
-  loadAd('footer-ad');
+  // Initial load
+  loadFooterAd();
 
   // Auto-refresh every 60 seconds
-  setInterval(()=>{loadAd('top-ad');}, 60000);
-  setInterval(()=>{loadAd('middle-ad');}, 60000);
-  setInterval(()=>{loadAd('footer-ad');}, 60000);
+  setInterval(loadFooterAd, 60000);
 
 </script>
 </body>
