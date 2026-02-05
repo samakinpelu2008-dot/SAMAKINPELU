@@ -3,42 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ad Test Page</title>
+  <title>Test Ad Page</title>
   <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background: #111;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    h1 {
-      color: #1e90ff;
-      margin-bottom: 50px;
-    }
+    body {background:#0a0a0a; color:white; font-family:sans-serif; text-align:center; padding:20px;}
+    h1 {color:#1e90ff;}
+    .ad-banner {width:100%; text-align:center; margin:20px 0;}
+    .ad-banner iframe {border:none;}
   </style>
 </head>
 <body>
 
-  <h1>Ad Test Page</h1>
+  <h1>Test Ad Page</h1>
 
-  <!-- ===== AD BANNER ===== -->
-  <div id="ad-container">
-    <script>
-      atOptions = {
-        'key' : 'f85a5e2d9a0a54098121a4d47a2212d9',
-        'format' : 'iframe',
-        'height' : 60,
-        'width' : 468,
-        'params' : {}
-      };
-    </script>
-    <script src="https://www.highperformanceformat.com/f85a5e2d9a0a54098121a4d47a2212d9/invoke.js"></script>
-  </div>
+  <!-- TOP AD -->
+  <div id="top-ad" class="ad-banner"></div>
+
+  <p>This is just a test page to check your ad banners and auto-refresh.</p>
+
+  <!-- MIDDLE AD -->
+  <div id="middle-ad" class="ad-banner"></div>
+
+  <p>Stay on this page for a few minutes to see auto-refresh in action.</p>
+
+  <!-- FOOTER AD -->
+  <div id="footer-ad" class="ad-banner"></div>
+
+  <script>
+    function loadAd(containerId){
+      document.getElementById(containerId).innerHTML = `
+        <script>
+          atOptions = {
+            'key' : 'f85a5e2d9a0a54098121a4d47a2212d9',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        <\/script>
+        <script src="https://www.highperformanceformat.com/f85a5e2d9a0a54098121a4d47a2212d9/invoke.js"><\/script>
+      `;
+    }
+
+    // Initial load
+    loadAd('top-ad');
+    loadAd('middle-ad');
+    loadAd('footer-ad');
+
+    // Refresh every 60 seconds
+    setInterval(()=>{loadAd('top-ad');}, 60000);
+    setInterval(()=>{loadAd('middle-ad');}, 60000);
+    setInterval(()=>{loadAd('footer-ad');}, 60000);
+  </script>
 
 </body>
 </html>
